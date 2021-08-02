@@ -1,0 +1,83 @@
+@import "../vars";
+@import "../blocks/fonts";
+
+.slick {
+  &-list {
+    overflow: hidden;
+  }
+
+  &-track {
+    display: flex;
+  }
+}
+
+.slider {
+  position: relative;
+  max-width: 870px;
+  max-height: auto;
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    font-size: 0;
+    width: 15px;
+    height: 30px;
+    border: hidden;
+    margin: 10px;
+  }
+
+  &__item-head {
+    max-width: 285px;
+    position: absolute;
+    top: -15%;
+    margin-left: 430px;
+    margin-top: 73px;
+    z-index: 10;
+  }
+
+  & h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: $dark;
+  }
+
+  & .slick-arrow.slick-prev {
+    left: 0;
+    background: url(../../images/arrows-L.svg) 0 0 / 100% no-repeat;
+  }
+
+  & .slick-arrow.slick-next {
+    right: 0;
+    background: url(../../images/arrows-R.svg) 0 0 / 100% no-repeat;
+  }
+
+  & .slick-dots {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 40%;
+  }
+
+  & .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  & .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $light;
+    border-radius: 50%;
+    border: none;
+  }
+
+  & .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 1px solid $light;
+  }
+}

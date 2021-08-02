@@ -1,0 +1,41 @@
+@import "../vars";
+@import "../blocks/fonts";
+
+.popular {
+  margin-bottom: 86px;
+
+  &__head h2 {
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: $dark;
+  }
+}
+
+.sheet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 25px 0 25px 0;
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    list-style: none;
+  }
+
+  &__item-active {
+    border-bottom: 2px solid $accent-color1;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #2f3035;
+  }
+}

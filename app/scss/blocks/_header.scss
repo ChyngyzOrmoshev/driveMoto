@@ -1,0 +1,42 @@
+.header {
+  margin-bottom: 81px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+  }
+
+  &__link + &__link {
+    margin-left: 50px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $dark;
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 80px;
+    height: 76px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__info {
+    display: flex;
+    margin-right: 5px;
+  }
+
+  &__info address {
+    margin-right: 86px;
+  }
+
+  &__info-link + &__info-link {
+    margin-left: 10px;
+  }
+}

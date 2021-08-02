@@ -1,0 +1,74 @@
+@import "../vars";
+@import "../blocks/fonts";
+
+.search {
+  margin-bottom: 80px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 660px;
+    margin-bottom: 25px;
+  }
+
+  &__number,
+  &__brand,
+  &__product {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: $dark;
+    cursor: pointer;
+  }
+
+  &__filter-active {
+    background: $accent-color2;
+    border-radius: 3px;
+    padding: 11px 26px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: $dark;
+  }
+
+  & form {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__field input {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: 1px;
+    border-radius: 3px;
+    background: $accent-color2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #656464;
+  }
+  &__field button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 145px;
+    height: 50px;
+    border: none;
+    background: #1c62cd;
+    border-radius: 3px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $light;
+  }
+}

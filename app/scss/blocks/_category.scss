@@ -1,0 +1,61 @@
+@import "../vars";
+@import "../blocks/fonts";
+
+.category {
+  margin-bottom: 80px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  &__item {
+    max-width: 370px;
+    min-height: 130px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__head h4 {
+    margin: 0;
+    padding: 0;
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    color: $dark;
+  }
+
+  &__head a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #c4c4c4;
+  }
+
+  &__img {
+    text-align: center;
+  }
+
+  &__item-active {
+    border: transparent;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    cursor: pointer;
+  }
+
+  &__item-active h4 {
+    color: $accent-color1;
+  }
+}

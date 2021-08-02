@@ -1,0 +1,21 @@
+@import "../vars";
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $accent-color2;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+
+  &__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+  }
+}
