@@ -11,6 +11,29 @@
     font-size: 25px;
     color: $dark;
   }
+
+  &__btn {
+    width: 252px;
+    height: 50px;
+    background: #f0f0f4;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  &__btn button {
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2f3035;
+    cursor: pointer;
+  }
 }
 
 .sheet {

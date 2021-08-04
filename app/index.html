@@ -10,6 +10,17 @@
   </head>
 
   <body>
+    <div class="popup-overlay"></div>
+    <div class="modal-popup">
+      <a href="#modal-close" class="popup-close">&times;</a>
+      <div class="modal-content">
+        <p>Сообщить о поступлении товара</p>
+        <form action="#">
+          <input type="text" placeholder="укажите e-mail адрес" />
+          <button class="modal-btn">Сообщить</button>
+        </form>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -226,7 +237,9 @@
         <div class="popular__head">
           <h2>Популярные товары</h2>
           <ul class="sheet">
-            <li class="sheet__item sheet__item-active"><a href="#">запчасти</a></li>
+            <li class="sheet__item sheet__item-active">
+              <a href="#">запчасти</a>
+            </li>
             <li class="sheet__item"><a href="#">моторы</a></li>
             <li class="sheet__item"><a href="#">шины</a></li>
             <li class="sheet__item"><a href="#">электроника</a></li>
@@ -234,57 +247,643 @@
             <li class="sheet__item"><a href="#">аксессуары</a></li>
           </ul>
         </div>
-        <div class="card">
+        <div class="card spares card__active">
           <div class="card__item">
-            <img src="images/select.svg" alt="icon-heart" />
-            <div class="card__img">
-              <img src="images/backpack.jpg" alt="рюкзак" />
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
               <h4>Водонепроницаемый Рюкзак</h4>
               <p class="card__price">9 800 &#8381;</p>
             </div>
-            <div class="card__cart">
-              <img src="images/cart.svg" alt="icon-cart" />
-            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
           </div>
           <div class="card__item">
-              <p>sale</p>
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
             </div>
-            <img src="images/select.svg" alt="icon-heart" />
-            <div class="card__img">
-              <img src="images/vest.jpg" alt="жилет" />
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
               <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
-              <p class="card__price">9 900 &#8381;</p>
+              <p class="card__price">6 900 &#8381;</p>
             </div>
-            <div class="card__cart">
-              <img src="images/cart.svg" alt="icon-cart" />
-            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
           </div>
           <div class="card__item">
-            <img src="images/select.svg" alt="icon-heart" />
-            <div class="card__img">
-              <img src="images/binoculars.jpg" alt="Бинокль" />
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
               <h4>BRP Audio-Premium System</h4>
               <p class="card__price">68 000 &#8381;</p>
             </div>
-            <div class="card__cart">
-              <img src="images/cart.svg" alt="icon-cart" />
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
             </div>
           </div>
           <div class="card__item">
-            <div class="card__sale">
-              <p>sale</p>
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
             </div>
-            <img src="images/select.svg" alt="icon-heart" />
-            <div class="card__img">
-              <img src="images/equipment.jpg" alt="рюкзак" />
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
+              <h4>Водонепроницаемый Рюкзак</h4>
+              <p class="card__price">9 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
+              <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+              <p class="card__price">6 900 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
               <h4>Спасательное снаряжение</h4>
               <p class="card__noprice">нет в наличии</p>
-              <!-- здесь должно быть форма обратной связи -->
               <a href="#" class="card__form">Сообщить о поступлении</a>
             </div>
           </div>
         </div>
-        <button class="popular__btn">Показать еще</button>
+        <div class="card motors">
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
+              <h4>Водонепроницаемый Рюкзак</h4>
+              <p class="card__price">9 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
+              <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+              <p class="card__price">6 900 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
+              <h4>Водонепроницаемый Рюкзак</h4>
+              <p class="card__price">9 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
+              <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+              <p class="card__price">6 900 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="popular__btn">
+          <button type="button">Показать еще</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="banner horizontal">
+      <div class="container">
+        <a href="#" class="banner__items">
+          <img src="images/banner-discounts.jpg" alt="скидки" />
+        </a>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="container">
+        <div class="popular__head">
+          <h2>С этим товаром покупают</h2>
+          <ul class="sheet">
+            <li class="sheet__item sheet__item-active">
+              <a href="#">запчасти</a>
+            </li>
+            <li class="sheet__item"><a href="#">моторы</a></li>
+            <li class="sheet__item"><a href="#">шины</a></li>
+            <li class="sheet__item"><a href="#">электроника</a></li>
+            <li class="sheet__item"><a href="#">инструменты</a></li>
+            <li class="sheet__item"><a href="#">аксессуары</a></li>
+          </ul>
+        </div>
+        <div class="card spares card__active">
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img
+                class="card__img"
+                src="images/brp-audio-portativnaya-sistema.jpg"
+                alt="рюкзак"
+              />
+              <h4>BRP Audio-портативная система</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/Garmin.jpg" alt="рюкзак" />
+              <h4>Garmin Echomap Plus 62cv</h4>
+              <p class="card__price">45 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
+              <h4>Водонепроницаемый Рюкзак</h4>
+              <p class="card__price">9 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
+              <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+              <p class="card__price">6 900 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+          </div>
+        </div>
+        <div class="card motors">
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
+              <h4>Водонепроницаемый Рюкзак</h4>
+              <p class="card__price">9 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
+              <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+              <p class="card__price">6 900 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href="#"
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/backpack.jpg" alt="рюкзак" />
+              <h4>Водонепроницаемый Рюкзак</h4>
+              <p class="card__price">9 800 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/vest.jpg" alt="рюкзак" />
+              <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+              <p class="card__price">6 900 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="images/select.svg"
+                    alt="icon-heart"
+                    title="избранные"
+                /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/audio.jpg" alt="рюкзак" />
+              <h4>BRP Audio-Premium System</h4>
+              <p class="card__price">68 000 &#8381;</p>
+            </div>
+            <a href="#" title="В корзину"
+              ><div class="card__cart">
+                <img src="images/cart.svg" alt="icon-cart" /></div
+            ></a>
+          </div>
+          <div class="card__item">
+            <div class="card__top">
+              <div class="card__top-sale"><p>sale</p></div>
+              <div>
+                <a href="#"><img src="images/select.svg" alt="icon-heart" /></a>
+              </div>
+            </div>
+            <div class="card__content">
+              <img class="card__img" src="images/equipment.jpg" alt="рюкзак" />
+              <h4>Спасательное снаряжение</h4>
+              <p class="card__noprice">нет в наличии</p>
+              <a href="#" class="card__form">Сообщить о поступлении</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
